@@ -1,0 +1,65 @@
+@charset 'utf-8';
+
+body,div,section,article,nav,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+ul,ol,li{
+list-style:none;
+}
+
+div{
+overflow:hidden;
+
+	&:after{
+	content:'';
+	display:block;
+	clear:both;
+	}
+}
+
+
+div.wrapper{
+padding:50px;
+}
+
+[role="tablist"]{
+overflow:hidden;
+margin-left:-10px;
+margin-top:-10px;
+	li{
+	width:33.33%;
+	float:left;
+	}
+
+	a{
+	border:1px solid #888;
+	background:#ccc;
+	text-align:center;
+	text-decoration:none;
+	color:#333;
+	display:block;
+	margin-left:10px;
+	margin-top:10px;
+
+		&[aria-selected="true"]{
+		pointer-events: none;
+		opacity:.5;
+		}
+	}
+}
+
+.elTabPanel{
+	.elPanel{
+	padding:20px;
+	background:#eee;
+
+		&[aria-hidden="true"]{
+		overflow:hidden;
+		height:0;
+		padding:0;
+		}
+	}
+}
