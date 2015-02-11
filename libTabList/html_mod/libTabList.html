@@ -10,27 +10,27 @@
 		<div class="mdTabWrapper" data-libTabList>
 			<div>
 				<ul role="tablist">
-					<li><a href="#tab1" role="tab" aria-controles="tab1" aria-selected="true">tab1</a></li>
-					<li><a href="#tab2" role="tab" aria-controles="tab2" aria-selected="false">tab2</a></li>
-					<li><a href="#tab3" role="tab" aria-controles="tab3" aria-selected="false">tab3</a></li>
+					<li><a href="#tab1" role="tab" aria-controles="tab1">tab1</a></li>
+					<li><a href="#tab2" role="tab" aria-controles="tab2">tab2</a></li>
+					<li><a href="#tab3" role="tab" aria-controles="tab3">tab3</a></li>
 				</ul>
 			</div>
 			<div class="elTabPanel">
 				<ul>
 					<li>
-						<dl id="tab1" role="tabPanel" aria-hidden="false" class="elPanel">
+						<dl id="tab1" role="tabPanel" class="elPanel">
 							<dt>タイトル</dt>
 							<dd>全角２０文字ああああああああああああああ</dd>
 						</dt>
 					</li>
 					<li>
-						<dl id="tab2" role="tabPanel" aria-hidden="true" class="elPanel">
+						<dl id="tab2" role="tabPanel" class="elPanel">
 							<dt>タイトル2</dt>
 							<dd>全角２０文字ああああああああああああああ</dd>
 						</dt>
 					</li>
 					<li>
-						<dl id="tab3" role="tabPanel" aria-hidden="true" class="elPanel">
+						<dl id="tab3" role="tabPanel" class="elPanel">
 							<dt>タイトル3</dt>
 							<dd>全角２０文字ああああああああああああああ</dd>
 						</dt>
@@ -42,7 +42,7 @@
 	<script src="../js/jquery-1.11.1.min.js"></script>
 	<script src="../js/libTabList.js"></script>
 	<script>
-	$('[data-libTabList]').libTabList();
+	$('[data-libTabList]').libTabList({$selectedTab:$('[data-libTabList]').find('[aria-controles="tab2"]')});
 	</script>
 </body>
 </html>
