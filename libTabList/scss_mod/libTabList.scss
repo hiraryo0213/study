@@ -51,15 +51,14 @@ margin-top:-10px;
 	}
 }
 
-.elTabPanel{
-	.elPanel{
-	padding:20px;
-	background:#eee;
 
-		&[aria-hidden="true"]{
-		overflow:hidden;
-		height:0;
-		padding:0;
-		}
+[role="tabpanel"]{
+padding:20px;
+background:#eee;
+
+	&[aria-hidden="true"]{
+	overflow:hidden;
+	height:0;
+	padding:0;
 	}
 }

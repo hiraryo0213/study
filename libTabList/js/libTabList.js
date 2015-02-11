@@ -23,7 +23,7 @@ pullDown
 				$(this).data(namespace, $.extend(true, {
 					tabListAttr:'role="tablist"'
 					,tabAttr:'role="tab"'
-					,tabPanelAttr:'role="tabPanel"'
+					,tabPanelAttr:'role="tabpanel"'
 					,selectedTabAttr:'aria-selected'
 					,hideTabPanelAttr:'aria-hidden'
 					,relationshipAttr:'aria-controles'

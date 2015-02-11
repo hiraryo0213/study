@@ -46,11 +46,11 @@ div.wrapper {
   opacity: .5;
 }
 
-.elTabPanel .elPanel {
+[role="tabpanel"] {
   padding: 20px;
   background: #eee;
 }
-.elTabPanel .elPanel[aria-hidden="true"] {
+[role="tabpanel"][aria-hidden="true"] {
   overflow: hidden;
   height: 0;
   padding: 0;
