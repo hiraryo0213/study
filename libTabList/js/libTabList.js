@@ -21,11 +21,18 @@ libTabList
 
 				// オプションをセット
 				$(this).data(namespace, $.extend(true, {
+					// WAI-ARIAの属性値セット
+					// タブ郡
 					tabListAttr:'role="tablist"'
+					// タブ
 					,tabAttr:'role="tab"'
+					// タブに対応しているパネル
 					,tabPanelAttr:'role="tabpanel"'
+					// タブが選択されているか否か
 					,selectedTabAttr:'aria-selected'
+					// タブパネルが表示されているか否か
 					,hideTabPanelAttr:'aria-hidden'
+					// タブとタブパネルのヒモ付を行っているもの
 					,relationshipAttr:'aria-controles'
 
 					// tabのDOM格納場所
