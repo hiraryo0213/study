@@ -1,0 +1,56 @@
+@charset 'utf-8';
+
+body,div,section,article,nav,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,p{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+ul,ol,li{
+list-style:none;
+}
+
+div{
+overflow:hidden;
+
+	&:after{
+	content:'';
+	display:block;
+	clear:both;
+	}
+}
+
+.mdSticky{
+background:rgba(51,51,51,.5);
+padding:20px;
+color:#fff;
+
+	&.elSticky{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	}
+
+	&.elClone{
+	visibility:hidden;
+	}
+}
+
+.mdDummy{
+
+	ul{
+	border:{
+		right:1px solid #ddd;
+		bottom:1px solid #ddd;
+	}
+	}
+	li{
+	height:50px;
+	line-height:50px;
+	border:{
+		top:1px solid #ddd;
+		left:1px solid #ddd;
+	};
+	}
+}
